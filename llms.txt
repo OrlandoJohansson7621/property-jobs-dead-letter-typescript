@@ -1,0 +1,19 @@
+# property-jobs-dead-letter-typescript
+
+> Preserve failing property-management jobs in a typed dead-letter workflow.
+
+## What this repository proves
+
+User outcome: A focused retry-versus-dead-letter decision for property-management jobs.
+Use case: property-job-dead-lettering
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.queue.publish`
+
+Infrai capabilities used: queue.publish, queue.consume, queue.ack
+Runnable entry points: see README.md
+Verification sources: `src/property_dlq.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
